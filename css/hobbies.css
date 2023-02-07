@@ -1,0 +1,210 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: sans-serif;
+   
+
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+nav{
+    position:fixed;
+    background: rgb(11, 12, 12);
+    height: 80px;
+    width:100%;
+    z-index: 100;
+
+}
+nav .logo img{
+    height: 70px;
+    width: auto;
+    margin-left: 40px;
+    margin-top: 5px;
+    line-height: 80px;
+}
+
+nav ul{
+    float: right;
+    margin-right: 40px;
+}
+nav li{
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+
+}
+nav a{
+    color: rgb(91, 188, 154);
+    font-size: 14px;
+    text-transform: uppercase;
+    padding:7px 10px;
+    border-radius: 30px;
+    border:1px solid transparent;
+    background: transparent;
+
+}
+nav a:hover{
+    border: 1px solid rgb(91, 188, 154);
+    transition: 0.5s;
+    background:transparent;
+}
+
+
+
+
+@media(max-width:1048px){
+    nav ul{
+        margin-right: 20px;
+
+    }
+    nav a{
+        font-size: 14px;
+        
+
+    }
+}
+@media(max-width: 899px){
+
+    nav #icon{
+     display: block;
+ 
+    }
+    nav ul{
+    position: fixed;
+    width:100%;
+    background: #c3f6e7;
+    top: 80px;
+    left: -100%;
+    transition: all.5s;
+    text-align: center;
+    z-index: 100;
+    height: 100vh;
+    
+    }
+    nav li{
+        display: block;
+        margin: 50px ;
+        line-height: 30px;
+    }
+    nav a{
+        font-size: 18px;
+    }
+    a .active,a:hover{
+        border: 1px solid rgb(91, 188, 154);
+        transition: 2s;
+    }
+    nav ul.show{
+        left:0;
+    }
+    nav #icon{
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+        margin-right: 40px;
+        float: right;
+        line-height: 80px;
+        cursor: pointer;
+    
+    }
+}
+
+/*hobbies*/
+.container{
+    
+    display: grid;
+    height: 110vh;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 60% 40%;
+    background: rgb(176, 150, 112);
+    padding-bottom: 20px;
+}
+.top1{
+    margin-top: 90px;
+    margin-left: 50px;
+    background: #c3f6e7;
+    display: flex;
+    flex-direction: column;
+}
+.top1 h2{
+    margin-left: 25px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.text{
+    margin-left: 25px;
+    margin-right: 15px;
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    word-spacing: 4px;
+}
+.top2{
+    margin-top: 90px;
+    margin-right: 50px;
+    background-image:  url(images/hbs.jpg);
+}
+.bottom1{
+    margin-left: 50px;
+    background-image:  url(images/hobbies2.0.jpg);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.bottom2{
+    margin-right: 50px;
+    background: palegoldenrod;
+}
+.bottom2 h2{
+    margin-left: 25px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.texts{
+    margin-left: 25px;
+    margin-right: 15px;
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    word-spacing: 4px;
+}
+
+@media (max-width:1050px){
+    .container{
+        display: grid;
+        height: 150vh;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 60% 45%;
+        padding-bottom: 150px;
+        
+        
+    }
+    .top1{
+        margin-top: 90px;
+        margin-left: 50px;
+        background: #c3f6e7;
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+@media (max-width:650px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: 140vh;padding-bottom: 10px;
+    }
+    .top1{
+        margin-top: 110px;
+        margin-left: 20px;
+        margin-right: 20px;
+        background: #c3f6e7;
+        padding: 5%;
+    }
+    .bottom2{
+        background: palegoldenrod;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 5%;
+        
+    }
+}
