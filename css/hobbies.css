@@ -142,11 +142,12 @@ nav a:hover{
 .top2{
     margin-top: 90px;
     margin-right: 50px;
-    background-image:  url(images/hbs.jpg);
+    background-image:  url(images/travelo.jpg);
+    background-size: cover;
 }
 .bottom1{
     margin-left: 50px;
-    background-image:  url(images/hobbies2.0.jpg);
+    background-image:  url(images/travel1.jpg);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 }
@@ -189,22 +190,69 @@ nav a:hover{
 }
 @media (max-width:650px){
     .container{
-        display: flex;
-        flex-direction: column;
-        height: 140vh;padding-bottom: 10px;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-columns: auto;
+        background: rgb(176, 150, 112);
+        padding-bottom: 450px;
     }
     .top1{
-        margin-top: 110px;
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 95px;
         background: #c3f6e7;
-        padding: 5%;
-    }
-    .bottom2{
-        background: palegoldenrod;
-        margin-left: 20px;
-        margin-right: 20px;
-        padding: 5%;
+        height: 460px;
         
+    }
+    .top1 h2{
+        margin-left: 25px;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .text{
+        margin-left: 25px;
+        margin-right: 15px;
+        font-size: 18px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        word-spacing: 4px;
+    }
+    .top2{
+        position: relative;
+        max-width: 100%;
+        display: block;
+        height: auto;
+        width: auto;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 60px;
+        background-image:  url(images/travelo.jpg);
+        background-size: cover;
+    }
+    .bottom1{
+       width: 0;
+       height: 0;
+    }
+    
+    .bottom2{
+        height: 370px;
+        margin-right: 50px;
+        background: palegoldenrod;
+        margin-left: 50px;
+        margin-top: 15px;
+        
+    }
+    .bottom2 h2{
+        margin-left: 25px;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .texts{
+        margin-left: 25px;
+        margin-right: 15px;
+        font-size: 18px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        word-spacing: 4px;
     }
 }
